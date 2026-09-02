@@ -79,7 +79,7 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - udacity-project-3
           type: approval
           requires:
             - build
