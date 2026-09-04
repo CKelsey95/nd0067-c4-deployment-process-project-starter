@@ -8,14 +8,12 @@ orbs:
 jobs:
   build:
     docker:
-      # the base image can run most needed actions with orbs
       - image: "cimg/node:14.15"
     steps:
       # install node and checkout code
       - node/install:
           node-version: '14.15'         
       - checkout
-      # Use root level package.json to install dependencies in the frontend app
       - run:
           name: Install Front-End Dependencies
           command: |
@@ -23,33 +21,27 @@ jobs:
             echo $(node --version)
             echo "NPM --version" 
             echo $(npm --version)
-            npm run frontend:install
-      # TODO: Install dependencies in the the backend API          
+            npm run frontend:install       
       - run:
           name: Install API Dependencies
           command: |
            echo "Installing API dependencies"
            npm run api:install
-      # TODO: Lint the frontend
       - run:
           name: Front-End Lint
           command: |
             npm run frontend:lint
-      # TODO: Build the frontend app
       - run:
           name: Front-End Build
           command: |
-            npm run frontend:build
-      # TODO: Build the backend API      
+            npm run frontend:build    
       - run:
           name: API Build
           command: |
             npm run api:build
-  # deploy step will run only after manual approval
   deploy:
     docker:
       - image: "cimg/base:stable"
-      # more setup needed for aws, node, elastic beanstalk
     steps:
       - node/install:
           node-version: '14.15' 
@@ -58,7 +50,6 @@ jobs:
       - checkout
       - run:
           name: Deploy App
-          # TODO: Install, build, deploy in both apps
           command: |
             echo "Deploying frontend and API"
             # Frontend: install, build, deploy (root package.json scripts perform cd)

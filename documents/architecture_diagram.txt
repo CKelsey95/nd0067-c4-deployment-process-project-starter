@@ -1,0 +1,20 @@
+Also in Infrastructure_description.md
+
+                         +-----------+
+                         |  Browser  |
+                         +-----------+
+                           /       \
+                          /         \
+                         v           v
+        +----------------------+   +------------------------+
+        |   S3 static website  |   |    Elastic Beanstalk    |
+        |  (Angular frontend)  |   |    (Node.js API/EC2)    |
+        +----------------------+   +------------------------+
+                    ^                     |          |
+                    |                     v          v
+                    |          +----------------+  +----------------+
+                    |          |  RDS Postgres  |  |  S3 image bkt  |
+                    |          | (users, feed)  |  | (uploads)      |
+                    |          +----------------+  +----------------+
+                    |                                     ^
+                    +-------------- signed upload URL -----+

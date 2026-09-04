@@ -1,0 +1,10 @@
+also in PIpeline_description.md
+
+[push to master]
+       |
+       v
+   +-------+       +------+       +--------+
+   | build | ----> | hold | ----> | deploy |
+   +-------+       +------+       +--------+
+   install/lint     manual        deploy frontend -> S3
+   build FE+API     approval      deploy API -> Elastic Beanstalk

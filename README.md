@@ -1,3 +1,5 @@
+project visible at: http://udacity-ckelsey95.s3-website.us-east-2.amazonaws.com/home
+
 circleCI screenshot: 
 
 ![alt text](documents/circleci.png)
@@ -14,3 +16,5 @@ elastic beanstalk
 S3
 ![alt text](documents/s3.png)
 
+Udagram hosted working:
+![alt text](documents/Udagram_Working.png)
