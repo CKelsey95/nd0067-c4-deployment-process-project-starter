@@ -18,3 +18,10 @@ S3
 
 Udagram hosted working:
 ![alt text](documents/Udagram_Working.png)
+
+Documents/Diagrams:
+documents\Application_dependencies.md
+
+documents\Infrastructure_description.md
+
+documents\Pipeline_description.md
