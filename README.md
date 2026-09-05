@@ -2,26 +2,26 @@ project visible at: http://udacity-ckelsey95.s3-website.us-east-2.amazonaws.com/
 
 circleCI screenshot: 
 
-![alt text](documents/circleci.png)
+![alt text](docs/circleci.png)
 
 
 RDS Screenshot:
-![alt text](documents/RDS.png)
+![alt text](docs/RDS.png)
 
 
 elastic beanstalk
-![alt text](documents/elastic_beanstalk.png)
+![alt text](docs/elastic_beanstalk.png)
 
 
 S3
-![alt text](documents/s3.png)
+![alt text](docs/s3.png)
 
 Udagram hosted working:
-![alt text](documents/Udagram_Working.png)
+![alt text](docs/Udagram_Working.png)
 
 Documents/Diagrams:
-documents\Application_dependencies.md
+docs\Application_dependencies.md
 
-documents\Infrastructure_description.md
+docs\Infrastructure_description.md
 
-documents\Pipeline_description.md
+docs\Pipeline_description.md
